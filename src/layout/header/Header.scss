@@ -1,0 +1,14 @@
+.app-header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrap {
+        position: sticky;
+        background-color: transparent;
+        inset: 0 0 auto 0;
+        z-index: 99;
+        padding: 1rem 0;
+        max-height: var(--header-height, 4.5rem);
+    }
+}
