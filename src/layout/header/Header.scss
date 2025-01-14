@@ -1,4 +1,20 @@
+@font-face {
+    font-family: Yesteryear;
+    src: url('./yesteryear/Yesteryear-Regular.ttf');
+}
+
 .app-header {
+    &__title {
+        font-family: Yesteryear, monospace;
+        font-size: 1.25rem;
+        color: light-dark(oklch(64.44% 0.2683 20.12), #fff);
+        text-decoration: none;
+        &:hover,
+        &:focus-visible {
+            color: light-dark(oklch(64.44% 0.2683 20.12), #fff);
+            text-decoration: none;
+        }
+    }
     &__inner {
         display: flex;
         justify-content: space-between;
